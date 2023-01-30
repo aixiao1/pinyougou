@@ -1,0 +1,76 @@
+                    /* 把我们所有边框的外边距清零 */
+                
+                * {
+                    margin: 0;
+                    padding: 0;
+                    /* css3盒子模型 */
+                    box-sizing: border-box;
+                }
+                /* 斜体的文字不倾斜 */
+                
+                em,
+                i {
+                    font-style: normal
+                }
+                /* 去掉li的小圆点 */
+                
+                li {
+                    list-style: none
+                }
+                /* border 0 照顾低版本浏览器 如果图片外面包含了连接会出现边框问题（兼容性） */
+                
+                img {
+                    border: 0;
+                    /* 取消图片底侧有空白缝隙的问题 */
+                    vertical-align: middle
+                }
+                /* 当我们鼠标经过button的时候鼠标变成小手 */
+                
+                button {
+                    cursor: pointer
+                }
+                /* 所有连接的颜色都是这个且取消下划线 */
+                
+                a {
+                    color: #666;
+                    text-decoration: none
+                }
+                /* 鼠标经过变成红色（京东红） */
+                
+                a:hover {
+                    color: #c81623
+                }
+                /* 按钮指定字体 */
+                
+                button,
+                input {
+                    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+                    /* 默认有灰色边框我们需要手动去掉 */
+                    border: 0;
+                    /* 去掉蓝色边框 */
+                    outline: none;
+                }
+                /* "\5B8B\4F53"宋体汉字的unique编码 （浏览器能识别）*/
+                /* 页面的背景色白色 */
+                
+                body {
+                    -webkit-font-smoothing: antialiased;
+                    background-color: #fff;
+                    /* 抗锯齿性文字放大后不要有明显的锯齿性让文字显示得更加清晰 */
+                    font: 12px/1.5 Microsoft YaHei,
+                    Heiti SC,
+                    tahoma,
+                    arial,
+                    Hiragino Sans GB,
+                    "\5B8B\4F53",
+                    sans-
+                }
+                    /* 元素隐藏起来  
+.hide
+.none {
+    display:none;
+}    
+伪元素清除浮动
+.clearfix:after {
+    visibility: hidden;
+} 

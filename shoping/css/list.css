@@ -1,0 +1,75 @@
+/* 列表页专有的css */
+.nav {
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    border-left: 1px solid #c81523;
+    left: 190px;
+    top: 40px;
+    /* 上 右 下 左 */
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    /* 上下0 左右30px */
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+    display: block;
+    /* 垂直居中时行高大于原高度位置会偏下 */
+    line-height: 49px;
+    /* 上下0 左右30px */
+    padding: 0 20px;
+    font-size: 14px;
+
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e90f';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul {
+    overflow: hidden;
+}
+
+.sk_bd ul li {
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+    width: 290px;
+    height: 460px;
+    /* 刚开始小li就有一像素的透明边框 */
+    border: 1px solid transparent;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
+
+/* 把小li四的倍数选出来 */
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}

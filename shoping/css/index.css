@@ -1,0 +1,490 @@
+.main {
+    width: 980px;
+    height: 455px;
+    /* background-color: pink; */
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+}
+
+.newsfla {
+    float: right;
+    width: 250px;
+    height: 455px;
+    /* background-color: skyblue; */
+}
+
+.news {
+    height: 165px;
+    /* background-color: pink; */
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    /* 边框虚线 */
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    content: "\e911";
+    font-family: 'icomoon';
+}
+
+.news-bd {
+    /* 上5 左右15 下0 */
+    padding: 5px 15px 0;
+}
+
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 超出部分隐藏 */
+    overflow: hidden;
+    /* 限制文字在一行显示 不允许换行 */
+    white-space: nowrap;
+    /* 文字超出的时候用省略号来显示 */
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    /* background-color: purple; */
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: pink;
+    margin-top: 12px;
+    background: url(../精灵图.png) no-repeat -19px -15px;
+    /* background: url(../精灵图.png) no-repeat -81px -15px; */
+}
+
+.lifeservice ul li:nth-child(2) i {
+    background: url(../精灵图.png) no-repeat -81px -15px;
+}
+
+.lifeservice ul li:nth-child(3) i {
+    background: url(../精灵图.png) no-repeat -142px -15px;
+}
+
+.lifeservice ul li:nth-child(4) i {
+    background: url(../精灵图.png) no-repeat -207px -15px;
+}
+
+.lifeservice ul li:nth-child(5) i {
+    background: url(../精灵图.png) no-repeat -16px -89px;
+}
+
+.lifeservice ul li:nth-child(6) i {
+    background: url(../精灵图.png) no-repeat -79px -89px;
+}
+
+.lifeservice ul li:nth-child(7) i {
+    background: url(../精灵图.png) no-repeat -146px -89px;
+}
+
+.lifeservice ul li:nth-child(8) i {
+    background: url(../精灵图.png) no-repeat -207px -89px;
+}
+
+.lifeservice ul li:nth-child(9) i {
+    background: url(../精灵图.png) no-repeat -16px -160px;
+}
+
+.lifeservice ul li:nth-child(10) i {
+    background: url(../精灵图.png) no-repeat -79px -160px;
+}
+
+.lifeservice ul li:nth-child(11) i {
+    background: url(../精灵图.png) no-repeat -142px -160px;
+}
+
+.lifeservice ul li:nth-child(12) i {
+    background: url(../精灵图.png) no-repeat -207px -160px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    /* background-color: #ebebeb; */
+    margin-top: 12px;
+}
+
+.recom-hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    /* 水平居中 */
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.recom-bd {
+    float: left;
+}
+
+.recom-bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom-bd ul li img {
+    width: 247px;
+    height: 163px;
+}
+
+.recom-bd ul li:nth-child(-n+3):after {
+    /* nth-child（）伪元素选择器 n+3是从第三个往后边选  -n+3从第三个往前面选*/
+    content: '';
+    /* after伪元素属于行内元素没有大小，所以加定位 */
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+/* 家用电器模块 */
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+
+}
+
+.tab_list ul li a {
+    /* 上下0 左右15px */
+    margin: 0 15px;
+}
+
+.like_hd {
+    margin-top: 23px;
+    height: 36px;
+}
+
+.like_hd h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+
+.mod_like .like_hd a {
+    float: right;
+    display: block;
+    width: 22px;
+    height: 15px;
+    background-image: url(../精灵图.png);
+    background-position: -415px -110px;
+}
+
+.fr {
+    float: right;
+}
+
+/* 猜你喜欢模块 */
+.like_bd {
+
+    width: 1200px;
+    height: 231px;
+}
+
+.like_bd ul li {
+    display: inline-block;
+    width: 196px;
+    height: 231px;
+    text-align: center;
+    /* border-right: 1px solid red; */
+}
+
+
+
+.like_text {
+    display: block;
+    width: 134px;
+    height: 61px;
+    /* background-color: red; */
+    text-align: center;
+    margin-left: 32px;
+    margin-top: 8px;
+}
+
+.like_text span {
+    color: #df3033;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* 传智播客模块 */
+.interest_hd h2 {
+    /* float: left; */
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.interest_bd {
+    height: 406px;
+    /* background-color: pink; */
+    border: 1px solid #ededed;
+}
+
+.interest_bd .interest_book {
+    float: left;
+
+    width: 404px;
+    height: 405px;
+    background-color: #b8bddd;
+    background-image: url(../upload/好书榜.png);
+    /* 不重复 */
+    background-repeat: no-repeat;
+    /* 绝对定位 */
+    background-position: 140px 120px;
+}
+
+.interest_bd .interest_book .text {
+    width: 356px;
+    height: 51px;
+    margin: 24px;
+}
+
+.interest_bd .interest_goods {
+    float: left;
+    width: 226px;
+    height: 405px;
+    color: #333333;
+    padding-left: 10px;
+    /* background-color: black; */
+}
+
+.interest_bd .interest_goods .title {
+    text-align: center;
+    margin: 0 20px;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    border-bottom: 1px dashed #ededed;
+    ;
+}
+
+.interest_bd .interest_book .text span {
+    color: #3b468d;
+    font-size: 18px;
+}
+
+.interest_bd .interest_goods .recom {
+    display: block;
+    color: #333333;
+    padding-top: 68px;
+    width: 216px;
+    height: 207px;
+    background-image: url(../upload/达人推荐.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #ccc;
+}
+
+.interest_bd .interest_goods .find {
+    display: block;
+    color: #333333;
+    padding-top: 20px;
+    width: 216px;
+    height: 158px;
+    background-image: url(../upload/发现好物.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.interest_bd .interest_goods .recom img {
+    margin-top: 1px;
+}
+
+.interest_bd .interset_brandstreet {
+    float: left;
+    width: 408px;
+    height: 404px;
+    background-color: #f7f7f7;
+
+}
+
+.interest_bd .interset_brandstreet .title {
+    text-align: center;
+    margin: 0 20px;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    border-bottom: 1px dashed #ededed;
+
+}
+
+.interest_bd .interset_brandstreet .suboer {
+    display: block;
+    color: #333333;
+    width: 408px;
+    height: 207px;
+    margin-top: 12px;
+    background-image: url(../upload/supor.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+    padding: 75px 53px;
+    background-position-y: bottom;
+    border-bottom: 1px solid #ccc;
+}
+
+.interest_bd .interset_brandstreet .interatinoal,
+.super_sale {
+    color: #333333;
+    display: block;
+    width: 203px;
+    height: 160px;
+    margin-top: 12px;
+    padding: 10px 10px;
+    background-image: url(../upload/international.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.interest_bd .interset_brandstreet .super_sale {
+
+    background-image: url(../upload/super\ sale.png);
+}
+
+.interest_bd .interest_trademark {
+    float: right;
+    display: block;
+    width: 160px;
+    height: 405px;
+    /* background-color: yellow; */
+    background-image: url(../upload/商标.png);
+}
+
+
+
+/* 底部模块 */
+.floor .w {
+    margin-top: 30px;
+}
+
+.box-bd {
+    height: 361px;
+    /* background-color: pink; */
+}
+
+/* >亲儿子 */
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    height: 361px;
+    text-align: center;
+}
+
+.col_210 li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    padding-left: 10px;
+}
+
+.col_329 {
+
+    width: 329px;
+}
+
+.col_221 {
+
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+
+    width: 219px;
+}
+
+.bb {
+    /* a属于行内元素，包含行内块或块级元素必须转换为行内块元素 */
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转换为块级元素（最安全的做法） */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.box-hd {
+    margin-top: 20px;
+}
+
+.brand {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
